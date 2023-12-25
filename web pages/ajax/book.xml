@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <bookid>1</bookid>
+        <title>DATA STRUCTURES</title>
+        <author>LIPSHUTE</author>
+        <price>217.00</price>
+    </book>
+    <book>
+        <bookid>2</bookid>
+        <title>DAA</title>
+        <author>PALMAR</author>
+        <price>236.00</price>
+    </book>
+    <book>
+        <bookid>3</bookid>
+        <title>GUIDE NETWORK</title>
+        <author>COWARD</author>
+        <price>307.00</price>
+    </book>
+    <book>
+        <bookid>4</bookid>
+        <title>COBOL</title>
+        <author>NORTON</author>
+        <price>470.00</price>
+    </book>
+    <book>
+        <bookid>5</bookid>
+        <title>TURBO C++</title>
+        <author>ROBORT LAFORE</author>
+        <price>230.00</price>
+    </book>
+</books>
