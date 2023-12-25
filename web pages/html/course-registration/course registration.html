@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border:2px solid rgb(13, 19, 19);
+            width: 300px;
+            height:300px;
+            margin: 30px;
+            transition: 0.4s;
+            background:linear-gradient(50deg,rgb(0, 255, 153),rgb(192, 255, 219),#25eb7b,rgb(192, 255, 238),rgb(62, 249, 233));
+        }
+        .box1 img{
+            width: 50%;
+            height: 50%;
+            margin: 30px 40px 30px 40px;
+        }
+        .small h3{
+            text-align: center;
+        }
+        .box1:hover{
+            box-sizing: border-box;
+            width: 350px;
+            height: 350px;
+            text-shadow: 2px 2px 5px rgb(90, 14, 14);
+            box-shadow: 0 1px 10px rgba(103, 7, 26, 0.676) inset,0 1px 10px rgb(112, 10, 31) inset,0 1px 10px rgb(95, 8, 26) inset,0 1px 10px rgb(92, 8, 25) inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="course">
+    <h1>Web Technology</h1>
+    <table>
+        <tr>
+            <td>
+                <div class="box1" onclick="btn1('HTML5.html')">
+                    <center><img src="html1.png" alt="html"></center>
+                    <div class="small">
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="box1" onclick="btn1('css.html')">
+                    <center><img src="css.png" alt="html"></center>
+                    <div class="small">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="box1" onclick="btn1('php.html')">
+                    <center><img src="php.png" alt="html"></center>
+                    <div class="small">
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+    <h1>Programming Language</h1>
+    <table>
+        <tr>
+            <td>
+                <div class="box1" onclick="btn1('c.html')">
+                    <center><img src="c.png" alt="html"></center>
+                    <div class="small">
+                        <h3>C</h3>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="box1" onclick="btn1('c++.html')">
+                    <center><img src="c++.png" alt="html"></center>
+                    <div class="small">
+                        <h3>C++</h3>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="box1" onclick="btn1('java.html')">
+                    <center><img src="java.png" alt="html"></center>
+                    <div class="small">
+                        <h3>JAVA</h3>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+<script type="text/javascript">
+    function btn1(filename){
+        window.location=filename;
+    };
+</script>
+</html>
