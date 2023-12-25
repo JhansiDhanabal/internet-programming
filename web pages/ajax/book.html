@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <br>
+        <h3>BOOK DETAILS</h3>
+        <br><form name="form">
+            BOOK ID : <input type="text" id="t1"><br><br>
+            <input type="button" value="submit" onclick="display()">
+        </form>
+        <br><br>
+        <table id="content"></table></center>
+        <script>
+            function display()
+            {
+                
+                var xmlhttp=new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function(){
+                    if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                        var xmldoc=xmlhttp.responseXML;
+                        var x=xmldoc.getElementsByTagName("book");
+                        var k=document.getElementById("t1").value;
+                        for(i=0;i<x.length;i++)
+                        {
+                            if(k.match(x[i].getElementsByTagName('bookid')[0].childNodes[0].nodeValue)){
+                                document.getElementById("content").innerHTML="<tr><th>Bookid</th><td> "+x[i].getElementsByTagName('bookid')[0].childNodes[0].nodeValue+"</td></tr><tr><th> Title </th><td>"+x[i].getElementsByTagName('title')[0].childNodes[0].nodeValue+"</td></tr><tr><th>author</th><td> "+x[i].getElementsByTagName('author')[0].childNodes[0].nodeValue+"</td></tr><tr><th> Price</th><td> "+x[i].getElementsByTagName('price')[0].childNodes[0].nodeValue+"</td></tr>";
+                            }
+                        }
+                        
+                    }
+                }
+                xmlhttp.open("get","book.xml",true);
+                xmlhttp.send();
+            }
+        </script>
+        
+    </body>
+</html>
