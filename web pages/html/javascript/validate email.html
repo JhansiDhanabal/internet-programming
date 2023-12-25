@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Valid email</title>
+</head>
+<body onload="document.forms.text.focus()">
+    <form name="forms">
+        email id :<input type="text" name="email">
+        <input type="button" onclick="validate()" value="enter">
+        <div id="demo"></div>
+    </form>
+    <script>
+        function validate(){
+            var check=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var obj=document.forms.email.value;
+            if(obj.match(check)){
+                document.getElementById('demo').innerHTML='valid email address';
+            }
+            else{
+                document.getElementById('demo').innerHTML='invalid email address';
+            }
+        }
+    </script>
+</body>
+</html>
