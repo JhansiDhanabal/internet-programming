@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dulicates</title>
+</head>
+<body>
+    <form name="forms">
+        Enter String : <input type="text" name="str"></br><input type="button" value="enter" onclick="call(),duplicates()">
+    </form>
+    <p id="demo"></p>
+    <script>
+        function call(){
+        var str1=document.forms.str.value;
+        var arr=str1.split(" ");
+        var array=duplicates(arr).join("<br>");
+        document.getElementById('demo').innerHTML=("<b>Duplicates element </b> : <br>"+array);
+        };
+        function duplicates(arr){
+            let dup=[];
+            for(var i=0;i<arr.length-1;i++){
+                for(var j=i+1;j<arr.length;j++){
+                    if(arr[i]==arr[j]){
+                        dup.push(arr[i]);
+                    };
+                };
+            };
+            return dup;
+        };
+    </script>
+</body>
+</html>
