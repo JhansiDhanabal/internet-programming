@@ -1,0 +1,213 @@
+body{
+    background-color: black;
+    color: white;
+}
+.top{
+    position: sticky;
+    top: 15px;
+    z-index: 0;
+    border-bottom: 1px solid rgba(41, 199, 173, 0.1);
+    border-bottom-width: 1px;
+    width: 90%;
+}
+.container {
+    margin: 10px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.front{
+    margin: 5px;
+    position: relative;
+    width: 100%;
+}
+.image{
+    order: 1;
+    position: absolute;
+    top:0;
+    z-index: 10;
+    margin-left: 0;
+    margin-right: 50%;
+}
+.box {
+    list-style: none;
+    text-align: center;
+    float: left;
+    margin-left: 50%;
+}
+.box li{
+    margin-left: 70px;
+}
+.box li a{
+    text-decoration: none;
+    color: bisque;
+    float: left;
+}
+.header{
+    margin: 5px;
+    padding-top: 50px;
+}
+.text{
+    margin: 12%;
+    text-align: center;
+}
+.hello{
+    width: 5%;
+    height: 5%;
+    margin-left: 6%;
+}
+.align{
+    margin: 30px;
+    position: relative;
+}
+.photo{
+    width:25%;
+    height: 25%;
+}
+.welcome{
+    position: absolute;
+    top:90px;
+}
+.social img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.connect{
+    border-width: 50%;
+    position: absolute;
+    margin-left:80%;
+    border-left: 2px solid chocolate;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.cont{
+    position: relative;
+    margin-bottom: auto;
+}
+.rows{
+    width: 54%;
+    position: absolute;
+    top:0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.row{
+    text-align: justify;
+    font-size: 20px;
+    margin: 70px;
+    position: absolute;
+    width:90%;
+}
+.class{
+    position: relative;
+}
+.animate{
+position: absolute;
+left:0;
+width: 50%;
+font-family: 'langar',cursive;
+}
+.about{
+position: absolute;
+right: 0;
+}
+.container1{
+border:2px solid black;
+margin: 20%;
+}
+.bar{
+border: 2px solid rgb(206, 199, 199);
+background-color: rgb(102, 105, 105);
+border-radius: 120px;
+height: 40px;
+margin:5px;
+width: 60%;
+padding-bottom: 5px;
+padding-top: 1px;
+margin-bottom: 10px;
+position: relative;
+}
+.html{
+width: 80%;
+height: 40px;
+padding-bottom: 3px;
+border: 1px solid rgb(77, 205, 205);
+background: linear-gradient(to right,rgb(146, 254, 157), rgb(0, 201, 255));
+border-radius: 120px;
+}
+.css{
+width: 60%;
+height: 40px;
+padding-bottom: 3px;
+border: 1px solid rgb(77, 205, 205);
+background: linear-gradient(to right,rgb(146, 254, 157), rgb(0, 201, 255));
+border-radius: 120px;
+}
+.javascript{
+width: 50%;
+height: 40px;
+padding-bottom: 3px;
+border: 1px solid rgb(77, 205, 205);
+background: linear-gradient(to right,rgb(146, 254, 157), rgb(0, 201, 255));
+border-radius: 120px;
+}
+.c{
+width: 70%;
+height: 40px;
+padding-bottom: 3px;
+border: 1px solid rgb(77, 205, 205);
+background: linear-gradient(to right,rgb(146, 254, 157), rgb(0, 201, 255));
+border-radius: 120px;
+}
+.python{
+width: 40%;
+height: 40px;
+padding-bottom: 3px;
+border: 1px solid rgb(77, 205, 205);
+background: linear-gradient(to right,rgb(146, 254, 157), rgb(0, 201, 255));
+border-radius: 120px;
+}
+.java{
+width: 85%;
+height: 40px;
+padding-bottom: 3px;
+border: 1px solid rgb(77, 205, 205);
+background: linear-gradient(to right,rgb(146, 254, 157), rgb(0, 201, 255));
+border-radius: 120px;
+}
+.bar h2{
+font-family: sans-serif cursive;
+font-size: 18px;
+color: black;
+text-align: center;
+}
+.hold{
+margin-top: 53%;
+position: relative;
+max-width: 100%;
+}
+.input{
+margin-top: 70%;
+margin: 40px;
+border: black;
+padding-left: 28%;
+padding-top: 40px;
+padding-right: 12px;
+}
+.type{
+border: 2px solid white;
+width: 60%;
+height: 50%;
+padding: 40px;
+}
+input{
+outline: none;
+}
+.foot{
+border: 2px solid white;
+background-color: white;
+text-align: center;
+color: black;
+}
