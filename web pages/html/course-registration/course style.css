@@ -1,0 +1,117 @@
+nav{
+            list-style: none;
+            color: black;
+            justify-content: space-between;
+            position: sticky;
+            top:0;
+            z-index: 100;
+        }
+        .navigation{
+            background-color: aliceblue;
+            display: flex;
+        }
+        .navigation img{
+            position: relative;
+            margin-left: 0;
+            margin-top: 0;
+            margin-right: 860px;
+        }
+        .logo{
+            width: 10%;
+            height: 10%;
+        }
+        .navigation ul li{
+            list-style: none;
+            float: left;
+            display: inline-block;
+            margin-right: 20px;
+            background-color:#00e0d4;
+            border:2px solid black;
+        }
+        .navigation ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        .navigation ul li a:hover{
+            color: rgb(218, 138, 18);
+            background-color: #008166;
+        }
+        .welcome {
+            height: 300px;
+            background-color: rgb(30, 3, 69);
+            border:2px solid rgb(35, 8, 76);
+            padding: 80px;
+        }
+        .welcome h1{
+            margin-left: 10px;
+            margin-top: 60px; 
+        }
+        .heading{
+            width:50%;
+        }
+        .enroll{
+            width:150px;
+            height: 60px;
+            margin-top: 30px;
+            margin-left: 38%;
+            border: 2px solid black;
+            background-color: yellow;
+            text-align: center;
+            animation-name: example;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example{
+            from{margin-top:29px;margin-left:37%;width:155px;height:63px;}
+            to(margin-top:30px;margin-left:38%;width:150px;height:60px;)
+        }
+        .animation{
+            position: absolute;
+            right: 10%;
+            top:20%;
+        }
+        .content{
+            background-color: #ffa933;
+            height: 40px;
+            list-style: none;
+            border: 2px solid rgb(205, 216, 216);
+            text-align: center;
+            position: sticky;
+            top:100px;
+            z-index: 100;
+        }
+        .content ul {
+            margin: 5px;
+            position: relative;
+            left:0;
+        }
+        .content ul li{
+            list-style: none;
+            float: left;
+            border: 2px solid black;
+            background-color: #ff9999;
+            margin-right: 20px;
+        }
+        .content ul li a{
+            margin-left: 10px;
+            text-decoration: none;
+            margin: 10px;
+            color: rgb(30, 3, 69);
+        }
+        .content ul li a:hover{
+            color: rgb(250, 214, 34);
+        }
+        .about{
+            border: 2px solid white;
+            width: 50%;
+            height: 550px;
+        }
+        .syllabus{
+            height: 550px;
+        }
+        .syllabus ul{
+            list-style: circle;
+        }
+        .syllabus ul li ul li{
+            list-style: square;
+        }
