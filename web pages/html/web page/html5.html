@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            list-style: none;
+            color: black;
+            justify-content: space-between;
+            position: sticky;
+            top:0;
+            z-index: 100;
+        }
+        .navigation{
+            background-color: rgb(7, 11, 68); 
+            background-color: aliceblue;
+            display: flex;
+        }
+        .navigation img{
+            position: relative;
+            margin-left: 0;
+            margin-top: 0;
+            margin-right: 750px;
+        }
+        .logo{
+            width: 10%;
+            height: 10%;
+        }
+        .navigation ul li{
+            list-style: none;
+            float: left;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .navigation ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        .navigation ul li a:hover{
+            color: rgb(218, 138, 18);
+        }
+        .welcome {
+            height: 200px;
+            background-color: rgb(30, 3, 69);
+            border:2px solid rgb(35, 8, 76);
+            padding: 60px;
+        }
+        .enroll{
+            width:150px;
+            height: 60px;
+            margin-top: 30px;
+            margin-left: 43%;
+            border: 2px solid black;
+            background-color: yellow;
+            text-align: center;
+        }
+        .content{
+            margin-top: 20px;
+            height: 50px;
+            list-style: none;
+            border: 2px solid rgb(205, 216, 216);
+        }
+        .content ul li{
+            list-style: none;
+            float: left;
+            border: 2px solid rgb(205, 216, 216);
+            margin-right: 50px;
+            margin-left: 0px;
+        }
+        .content ul li a{
+            text-decoration: none;
+            margin-right: 20px;
+            color: rgb(30, 3, 69);
+        }
+        .content ul li a:hover{
+            color: rgb(250, 214, 34);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <img src="future learning.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign UP</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="welcome">
+        <h1 style="color:white;text-align: center;">INTRODUCTION TO HTML</h1>
+        <p  style="color:white;text-align: center;">This course is part of the Web Design for Everybody: Basics of Web Development & Coding Specialization</p>
+
+        <div class="enroll">
+            <h3 style="text-align: center;">Enroll for free</h3>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li><a href="#1">About</a></li>
+            <li><a href="#2">Instructors</a></li>
+            <li><a href="#3">Syllabus</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>
