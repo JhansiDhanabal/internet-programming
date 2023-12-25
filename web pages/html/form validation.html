@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>valid</title>
+        <style>
+            td{
+                border: 2px solid black;
+                padding: 20px;
+            }
+            .container{
+                border: 1px solid white;
+                padding-top: 10px;
+                padding-left: 40%;
+            }
+            input{
+                margin-left: 12px;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div class="container">
+            <h1 class="heading" > VALIDATION FORM</h1>
+        <table>
+            <td >
+                <label>User id  :  </label><input type="text" id="u"><br><br>
+                <label>Password  :  </label><input  type="text" id="p"><br><br>
+                <label>Name  :  </label><input type="text" id="n"><br><br>
+                <label>Address  :  </label><input type="text" id="ad"><br><br>
+                <label>Country  :  </label>
+                <select id="country" name="country" >
+                    <option value="please select the country">please select the country</option>
+                    <option value="India">India</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                </select>
+                <br><br>
+                <label>Zip code  :  </label><input type="text" id="zip"><br><br>
+                <label>Email  :  </label><input type="text" id="eid"><br><br>
+                <label for="gender">Select Male or Female  :  </label><input name="gender" type="radio" id="male">male<input type="radio" name="gender" id="female">female<br><br>
+                <label for="language">Language  :  </label><input type="checkbox" name="language" id="english">English<input type="checkbox" name="language" id="nonenglish" >Non English<br><br>
+                <label for="about">About  :  </label><br>
+                <textarea name="about" rows="5" cols="40"></textarea><br><br>
+                <center><input type="submit" onclick="check()"></center>
+            </td>
+        </table>
+        </div>
+        <div id="demo"></div>
+        <script>
+         function uid(){
+            var x=document.getElementById('u').value;
+            var len=x.length;
+            if(len>=5 && len<=7)
+                return true;
+            else{
+                alert("invalid user id");
+            }
+         };
+         function pword(){
+            var x=document.getElementById('p').value;
+            var len=x.length;
+            if(len>=7 && len<=12)
+                return true;
+            else{
+                alert("invalid password ");
+            }
+         };
+         function uname(){
+            var x=document.getElementById('n').value;
+            var a=/[a-z A-Z]/g
+            if(x.match(a))
+                return true;
+            else{
+                alert("invalid name");
+            }
+         };
+         function add(id1){
+            var x=document.getElementById(id1).value;
+            var a=/[a-z A-Z 0-9]/g
+            if(x.match(a))
+                return true;
+            else{
+                alert("invalid entry");
+            }
+         };
+         function ctry(){
+            var x=document.getElementById('country').value;
+            if(x!="please select the country")
+                return true;
+            else{
+                alert("enter your country name");
+            }
+         };
+         function mid(){
+            var x=document.getElementById('eid').value;
+            var a=/^[a-z A-Z 0-9 @+.-]+@[a-z A-Z 0-9 @+.-]+(?:\.[a-zA-Z0-9])*$/g;
+            if(x.match(a))
+            return true;
+            else
+            alert("invalid email");
+         };
+         function check(){
+            if(uid()==true){
+                if(pword()==true){
+                    if(uname()==true){
+                        if(add("ad")==true){
+                            if(ctry()==true){
+                                if(add("zip")){
+                                    if(mid()==true){
+                                        alert("REGISTERED SUCCESSFULLY");
+                                    };
+                                };
+                            };
+                        };
+                    };
+                };
+            };
+            
+         };
+        </script>
+    </body>
+</html>
